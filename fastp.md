@@ -13,8 +13,8 @@ mkdir -p NGS_final/{metadata,log,script,result}
 1. 進入metadatay資料夾，輸入 ```cd NGS_final/metadata```
 2. 建立run list
 - 建立 AML run list
-(1) 輸入 ```vim GSE49642_run.txt```
-(2) 按鍵盤 <kbd>i</kbd> 進入編輯模式(底下會出現"-- INSERT --")
+(1) 輸入 ```vim GSE49642_run.txt```  \
+(2) 按鍵盤 <kbd>i</kbd> 進入編輯模式(底下會出現"-- INSERT --")  \
 (3) 輸入共用excel的[RAW_DATA_DIR](https://docs.google.com/spreadsheets/d/1VJcEVEgGJvda-r6tbbAenRCqBA_cSyHO/edit?gid=1408776603#gid=1408776603)配分配到的5個 **run ID**
 ![螢幕擷取畫面 2026-05-18 111653](https://hackmd.io/_uploads/H1B6N-dJfg.png)
 (4) 按 <kbd>Esc</kbd> 離開編輯模式
