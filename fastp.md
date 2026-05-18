@@ -94,7 +94,7 @@ ls
 ![image](https://hackmd.io/_uploads/S1t0xM_Jzl.png)
 
 ## Step 6 建立clean FASTQ metadata，並將clean.fastq.gz檔案路徑記錄到[FastP_DIR](https://docs.google.com/spreadsheets/d/1VJcEVEgGJvda-r6tbbAenRCqBA_cSyHO/edit?gid=1618081040#gid=1618081040)
-1. 下載建立clean FASTQ metadata的script
+1. 下載建立`clean_fastp.tsv`的script
 ```
 cd /work/username/NGS_fianl/script
 rsync -avz /work/evelyn92/NGS_final/result/QC/Normal
