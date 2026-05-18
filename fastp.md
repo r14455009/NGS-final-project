@@ -12,7 +12,7 @@ mkdir -p NGS_final/{metadata,log,script,result}
 ## Step 2 將要跑的run建立成list
 1. 進入metadatay資料夾，輸入 ```cd NGS_final/metadata```
 2. 建立run list
-- 建立 AML run list
+- 建立 AML run list  \
 (1) 輸入 ```vim GSE49642_run.txt```  \
 (2) 按鍵盤 <kbd>i</kbd> 進入編輯模式(底下會出現"-- INSERT --")  \
 (3) 輸入共用excel的[RAW_DATA_DIR](https://docs.google.com/spreadsheets/d/1VJcEVEgGJvda-r6tbbAenRCqBA_cSyHO/edit?gid=1408776603#gid=1408776603)配分配到的5個 **run ID**
@@ -20,9 +20,9 @@ mkdir -p NGS_final/{metadata,log,script,result}
 (4) 按 <kbd>Esc</kbd> 離開編輯模式
 (5) 輸入 `:wq` 並按下 <kbd>Enter</kbd> 可儲存結果  
 **❗若出現 "E45: 'readonly' option is set (add ! to override)" 的話，請輸入`:wq!`來儲存）❗**
-- 建立 Normal run list
-(1) 輸入 ```vim GSE111085_run.txt```
-(2) 按鍵盤 <kbd>i</kbd> 進入編輯模式(底下會出現"-- INSERT --")
+- 建立 Normal run list  \
+(1) 輸入 ```vim GSE111085_run.txt```  \
+(2) 按鍵盤 <kbd>i</kbd> 進入編輯模式(底下會出現"-- INSERT --")  \
 (3) 輸入共用excel的[RAW_DATA_DIR](https://docs.google.com/spreadsheets/d/1VJcEVEgGJvda-r6tbbAenRCqBA_cSyHO/edit?gid=1408776603#gid=1408776603)配分配到的5個 **run ID**
 ![螢幕擷取畫面 2026-05-18 111821](https://hackmd.io/_uploads/Sk7mBbOyzl.png)
 (4) 按 <kbd>Esc</kbd> 離開編輯模式
@@ -41,9 +41,9 @@ rsync -avz /work/evelyn92/NGS_final/script/AML_fastp.sh ./
 rsync -avz /work/evelyn92/NGS_final/script/Normal_fastp.sh ./
 ```
 3. 修改```username```
-- 修改```AML_fastp.sh```
-(1) 輸入 ```vim AML_fastp.sh```
-(2) 按鍵盤 <kbd>i</kbd> 進入編輯模式(底下會出現"-- INSERT --")
+- 修改```AML_fastp.sh```  \
+(1) 輸入 ```vim AML_fastp.sh```  \
+(2) 按鍵盤 <kbd>i</kbd> 進入編輯模式(底下會出現"-- INSERT --")  \
 (3) 將SLUM的```username```改成自己的國網帳號    
 ![螢幕擷取畫面 2026-05-18 114825](https://hackmd.io/_uploads/B19Ph-dkMe.png)  \
 (4) 將```user1=username```的```username```改成自己的國網帳號    
@@ -51,9 +51,9 @@ rsync -avz /work/evelyn92/NGS_final/script/Normal_fastp.sh ./
 (5) 按 <kbd>Esc</kbd> 離開編輯模式
 (6) 輸入 `:wq` 並按下 <kbd>Enter</kbd> 可儲存結果  
 **❗若出現 "E45: 'readonly' option is set (add ! to override)" 的話，請輸入`:wq!`來儲存）❗**
-- 修改```Normal_fastp.sh```
-(1) 輸入 ```vim Normal_fastp.sh```
-(2) 按鍵盤 <kbd>i</kbd> 進入編輯模式(底下會出現"-- INSERT --")
+- 修改```Normal_fastp.sh```  \
+(1) 輸入 ```vim Normal_fastp.sh```  \
+(2) 按鍵盤 <kbd>i</kbd> 進入編輯模式(底下會出現"-- INSERT --")  \
 (3) 將SLUM的```username```改成自己的國網帳號    
 ![螢幕擷取畫面 2026-05-18 115132](https://hackmd.io/_uploads/H1zy6Zukfg.png)  \
 (4) 將```user1=username```的```username```改成自己的國網帳號
