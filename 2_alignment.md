@@ -33,7 +33,7 @@ sacct
 ## Step 5 檢查output
 1. 進入存放HISAT2 result的資料夾查看output
 ```
-cd /work/evelyn92/NGS_final/result/ALN/AML
+cd /work/username/NGS_final/result/ALN/AML
 ls
 ```
 2. 進入```run```子資料夾查看output
