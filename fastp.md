@@ -37,8 +37,8 @@ cd script
 ```
 2. 複製```AML_fastp.sh```和```Normal_fastp.sh```到script資料夾中
 ```
-rsync -avz /work/evelyn92/NGS_final/script/AML_fastp.sh ./
-rsync -avz /work/evelyn92/NGS_final/script/Normal_fastp.sh ./
+rsync -avz /work/evelyn92/NGS_final/script/01_AML_fastp.sh ./
+rsync -avz /work/evelyn92/NGS_final/script/01_Normal_fastp.sh ./
 ```
 3. 修改```username```
 - 修改```AML_fastp.sh```  \
@@ -98,7 +98,7 @@ ls
 ```
 cd /work/username/NGS_fianl/script
 rsync -avz /work/evelyn92/NGS_final/result/QC/Normal
-/work/evelyn92/NGS_final/script/clean_fastq_metadata.sh ./
+/work/evelyn92/NGS_final/script/02_clean_fastq_metadata.sh ./
 ```
 2. 執行```clean_fastq_metadata.sh```
 ```
