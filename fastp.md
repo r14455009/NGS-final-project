@@ -66,7 +66,7 @@ rsync -avz /work/evelyn92/NGS_final/script/01_Normal_fastp.sh ./
 1. 輸入以下指令，來以sbatch job的方式送出編輯完成的草稿
 ```
 sbatch 01_AML_fastp.sh
-sbatch 02_Normal_fastp.sh
+sbatch 01_Normal_fastp.sh
 ```
 2. 若送出成功將會出現以下文字(結果在result資料夾已經指定好路徑)
 ```
