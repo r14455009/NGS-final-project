@@ -93,13 +93,23 @@ ls
 - 跑完FasTP後每個run各會有4個檔案
 ![image](https://hackmd.io/_uploads/S1t0xM_Jzl.png)
 
-## Step 6 將clean.fastq.gz檔案路徑記錄到[FastP_DIR](https://docs.google.com/spreadsheets/d/1VJcEVEgGJvda-r6tbbAenRCqBA_cSyHO/edit?gid=1618081040#gid=1618081040)
-1. 顯示檔案路徑
+## Step 6 建立clean FASTQ metadata，並將clean.fastq.gz檔案路徑記錄到[FastP_DIR](https://docs.google.com/spreadsheets/d/1VJcEVEgGJvda-r6tbbAenRCqBA_cSyHO/edit?gid=1618081040#gid=1618081040)
+1. 下載建立clean FASTQ metadata的script
+```
+cd /work/username/NGS_fianl/script
+rsync -avz /work/evelyn92/NGS_final/result/QC/Normal
+/work/evelyn92/NGS_final/script/clean_fastq_metadata.sh ./
+```
+2. 執行```clean_fastq_metadata.sh```
+```
+bash clean_fastq_metadata.sh username
+```
+3. 顯示檔案路徑
 ```
 find /work/username/NGS_final/result/QC/AML -type f -name "*.fastq.gz"
 find /work/username/NGS_final/result/QC/Normal -type f -name "*.fastq.gz"
 ```
-2. 將路徑複製貼到[FastP_DIR](https://docs.google.com/spreadsheets/d/1VJcEVEgGJvda-r6tbbAenRCqBA_cSyHO/edit?gid=1618081040#gid=1618081040)
+4. 將路徑複製貼到[FastP_DIR](https://docs.google.com/spreadsheets/d/1VJcEVEgGJvda-r6tbbAenRCqBA_cSyHO/edit?gid=1618081040#gid=1618081040)
 
 ## Step 7 開放檔案權限
 1. 讓特定user可以讀取及修改
