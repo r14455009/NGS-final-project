@@ -65,8 +65,8 @@ rsync -avz /work/evelyn92/NGS_final/script/01_Normal_fastp.sh ./
 ## Step 4 執行FastP
 1. 輸入以下指令，來以sbatch job的方式送出編輯完成的草稿
 ```
-sbatch AML_fastp.sh
-sbatch Normal_fastp.sh
+sbatch 01_AML_fastp.sh
+sbatch 02_Normal_fastp.sh
 ```
 2. 若送出成功將會出現以下文字(結果在result資料夾已經指定好路徑)
 ```
@@ -102,7 +102,7 @@ rsync -avz /work/evelyn92/NGS_final/result/QC/Normal
 ```
 2. 執行```02_clean_fastq_metadata.sh```
 ```
-bash clean_fastq_metadata.sh username
+bash 02_clean_fastq_metadata.sh username
 ```
 3. 顯示檔案路徑
 ```
