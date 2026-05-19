@@ -50,4 +50,9 @@ ls
 find /work/username/NGS_final/result/ALN/AML -type f -name "*.sorted.bam"
 find /work/username/NGS_final/result/ALN/Normal -type f -name "*.sorted.bam"
 ```
-2. 將路徑複製貼到[ALN_DIR](https://docs.google.com/spreadsheets/d/1VJcEVEgGJvda-r6tbbAenRCqBA_cSyHO/edit?gid=1530628311#gid=1530628311)
+2. 顯示overall alignment rate
+```
+grep "overall alignment rate" /work/username/NGS_final/result/ALN/AML/*/*.hisat2.log
+grep "overall alignment rate" /work/username/NGS_final/result/ALN/Normal/*/*.hisat2.log
+```
+3. 將路徑和overall alignment rate複製貼到[ALN_DIR](https://docs.google.com/spreadsheets/d/1VJcEVEgGJvda-r6tbbAenRCqBA_cSyHO/edit?gid=1530628311#gid=1530628311)
