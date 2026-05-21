@@ -55,7 +55,7 @@ rsync -avz /work/evelyn92/NGS_final/script/01_Normal_fastp.sh ./
 (1) 輸入 ```vim Normal_fastp.sh```  \
 (2) 按鍵盤 <kbd>i</kbd> 進入編輯模式(底下會出現"-- INSERT --")  \
 (3) 將SLUM的```username```改成自己的國網帳號    
-![螢幕擷取畫面 2026-05-18 115132](https://hackmd.io/_uploads/H1zy6Zukfg.png)  \
+![截圖 2026-05-20 下午3.11.03](https://hackmd.io/_uploads/HyYe3y3kze.png)  \
 (4) 將```user1=username```的```username```改成自己的國網帳號
 ![螢幕擷取畫面 2026-05-18 113629](https://hackmd.io/_uploads/S1vyq-OkMe.png)  \
 (5) 按 <kbd>Esc</kbd> 離開編輯模式
