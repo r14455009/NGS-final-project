@@ -26,7 +26,7 @@ rsync -avz /work/evelyn92/NGS_final/script/04_stringtie.sh ./
 (6) 輸入 `:wq` 並按下 <kbd>Enter</kbd> 可儲存結果  \
 **❗若出現 "E45: 'readonly' option is set (add ! to override)" 的話，請輸入`:wq!`來儲存）❗**
 
-# Step 3 執行 StringTie
+## Step 3 執行 StringTie
 1. 輸入以下指令，來以sbatch job的方式送出編輯完成的草稿
 ```
 sbatch 04_stringtie.sh
