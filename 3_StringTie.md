@@ -1,4 +1,4 @@
-# Expression quantification
+# Expression quantification I
 
 ## Step 1 建立 sample BAM list
 1. 建立list
