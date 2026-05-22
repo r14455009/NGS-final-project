@@ -62,3 +62,31 @@ find /work/username/NGS_final/result/stringtie/AML -type f -name "*.gtf"
 find /work/username/NGS_final/result/stringtie/Normal -type f -name "*.gtf"
 ```
 2. 將路徑複製貼到[StringTie_DIR](https://docs.google.com/spreadsheets/d/1VJcEVEgGJvda-r6tbbAenRCqBA_cSyHO/edit?gid=382352135#gid=382352135)
+
+## Step 6 建立stringtie .gtf list
+1. 下載並修改要使用的script，輸入`cd /work/username/NGS_final/script`
+2. 複製```04_stringtie_gtf_list.sh```到script資料夾中
+```
+rsync -avz /work/evelyn92/NGS_final/script/04_stringtie_gtf_list.sh ./
+```
+3. 修改```username```  \
+(1) 輸入 ```vim 04_stringtie_gtf_list.sh```  \
+(2) 按鍵盤 <kbd>i</kbd> 進入編輯模式(底下會出現"-- INSERT --")  \
+(3) 將```username```改成自己的國網帳號  \
+![截圖 2026-05-21 晚上11.34.55](https://hackmd.io/_uploads/HypHIo2kze.png)  \
+(4) 按 <kbd>Esc</kbd> 離開編輯模式  \
+(5) 輸入 `:wq` 並按下 <kbd>Enter</kbd> 可儲存結果  \
+**❗若出現 "E45: 'readonly' option is set (add ! to override)" 的話，請輸入`:wq!`來儲存）❗**
+4. 輸入以下指令，來以sbatch job的方式送出編輯完成的草稿
+```
+sbatch 04_stringtie_gtf_list.sh
+```
+5. 若送出成功將會出現以下文字(結果在result資料夾已經指定好路徑)
+```
+Submitted batch job ＿＿＿
+```
+
+6. 可使用以下指令查看工作執行情況
+```
+sacct
+```
