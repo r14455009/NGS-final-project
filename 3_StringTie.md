@@ -90,3 +90,10 @@ Submitted batch job ＿＿＿
 ```
 sacct
 ```
+
+## step 7 將stringtie_gtf_list.txt檔案路徑記錄到[GTF_list](https://docs.google.com/spreadsheets/d/1VJcEVEgGJvda-r6tbbAenRCqBA_cSyHO/edit?gid=124287194#gid=124287194)
+1. 顯示檔案路徑
+```
+find /work/username/NGS_final/result/stringtie -type f -name "*.txt"
+```
+2. 將路徑複製貼到[GTF_list](https://docs.google.com/spreadsheets/d/1VJcEVEgGJvda-r6tbbAenRCqBA_cSyHO/edit?gid=124287194#gid=124287194)
