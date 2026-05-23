@@ -79,7 +79,7 @@ rsync -avz /work/evelyn92/NGS_final/script/04_stringtie_gtf_list.sh ./
 **❗若出現 "E45: 'readonly' option is set (add ! to override)" 的話，請輸入`:wq!`來儲存）❗**
 4. 輸入以下指令，來以sbatch job的方式送出編輯完成的草稿
 ```
-sbatch 04_stringtie_gtf_list.sh
+batch 04_stringtie_gtf_list.sh
 ```
 5. 若送出成功將會出現以下文字(結果在result資料夾已經指定好路徑)
 ```
